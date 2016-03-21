@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2v-tf-9Se">
+                    <rect key="frame" x="150" y="150" width="300" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you see me ..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKV-L5-Fbz">
+                            <rect key="frame" x="70" y="25" width="160" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="Vgx-eL-SrA"/>
+                                <constraint firstAttribute="height" constant="80" id="oa9-ww-xG9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Now you see me ...  But there is no secret."/>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Vgx-eL-SrA"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqO-m5-d0f">
+                            <rect key="frame" x="50" y="155" width="200" height="95"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal" title="Dismiss"/>
+                            <connections>
+                                <action selector="dismissView:" destination="iN0-l3-epB" eventType="touchUpInside" id="K9s-qX-Uce"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KqO-m5-d0f" firstAttribute="top" secondItem="kKV-L5-Fbz" secondAttribute="bottom" constant="50" id="27K-MZ-h5f"/>
+                        <constraint firstAttribute="height" constant="300" id="30s-lM-jw8"/>
+                        <constraint firstAttribute="trailing" secondItem="KqO-m5-d0f" secondAttribute="trailing" constant="50" id="OAh-uC-Xk7"/>
+                        <constraint firstAttribute="bottom" secondItem="KqO-m5-d0f" secondAttribute="bottom" constant="50" id="fBc-St-BMj"/>
+                        <constraint firstItem="kKV-L5-Fbz" firstAttribute="top" secondItem="A2v-tf-9Se" secondAttribute="top" constant="25" id="k83-7A-Ilq"/>
+                        <constraint firstItem="kKV-L5-Fbz" firstAttribute="leading" secondItem="A2v-tf-9Se" secondAttribute="leading" constant="70" id="rUb-0K-HOQ"/>
+                        <constraint firstAttribute="width" constant="300" id="wAJ-nx-vKO"/>
+                        <constraint firstItem="kKV-L5-Fbz" firstAttribute="centerX" secondItem="A2v-tf-9Se" secondAttribute="centerX" id="zST-I6-wXE"/>
+                        <constraint firstItem="KqO-m5-d0f" firstAttribute="leading" secondItem="A2v-tf-9Se" secondAttribute="leading" constant="50" id="zTn-fT-k4L"/>
+                        <constraint firstAttribute="trailing" secondItem="kKV-L5-Fbz" secondAttribute="trailing" constant="70" id="zgA-C9-vRp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="A2v-tf-9Se" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="D5S-Eh-zgn"/>
+                <constraint firstItem="A2v-tf-9Se" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DVE-3c-gkG"/>
+            </constraints>
+            <connections>
+                <outlet property="dismissButton" destination="KqO-m5-d0f" id="hTJ-DM-PpP"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="385"/>
+        </view>
+    </objects>
+</document>
