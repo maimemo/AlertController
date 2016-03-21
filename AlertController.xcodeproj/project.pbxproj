@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3577FA0B1C9F9E090035C3AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3577FA031C9F9E090035C3AC /* AppDelegate.m */; };
-		3577FA0C1C9F9E090035C3AC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3577FA041C9F9E090035C3AC /* Info.plist */; };
 		3577FA0D1C9F9E090035C3AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3577FA051C9F9E090035C3AC /* main.m */; };
 		3577FA0E1C9F9E090035C3AC /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3577FA071C9F9E090035C3AC /* PopView.m */; };
 		3577FA0F1C9F9E090035C3AC /* PopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3577FA081C9F9E090035C3AC /* PopView.xib */; };
@@ -144,7 +143,6 @@
 			files = (
 				3577FA151C9F9E640035C3AC /* LaunchScreen.storyboard in Resources */,
 				3577FA0F1C9F9E090035C3AC /* PopView.xib in Resources */,
-				3577FA0C1C9F9E090035C3AC /* Info.plist in Resources */,
 				3577FA161C9F9E640035C3AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
